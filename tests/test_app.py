@@ -292,4 +292,4 @@ class TestDataValidation:
         
         # Test unregister
         unregister_response = client.delete(f"/activities/{activity_name}/unregister?email={email}")
-        assert response.status_code == 200
+        assert unregister_response.status_code == 200
